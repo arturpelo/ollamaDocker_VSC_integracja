@@ -55,7 +55,7 @@ Możesz zastąpić `llama3` innym modelem, np. `mistral`, `phi3`, `gemma`.
 
 ---
 
-## Krok 4 – Weryfikacja połączenia
+## Krok 4 – Weryfikacja połączenia (niekoniecznie)
 
 Sprawdź czy API Ollamy odpowiada:
 
@@ -67,9 +67,9 @@ Powinna pojawić się lista dostępnych modeli w formacie JSON.
 
 ---
 
-## Krok 5 – Używanie wtyczki
+## Krok 5 – Używanie wtyczki (potem już tylko TO w VSC)
 
-Naciśnij `Ctrl+Shift+P` i wyszukaj jedną z komend:
+Naciśnij `Ctrl+Shift+P` w VSC i wyszukaj jedną z komend:
 
 | Komenda | Opis |
 |---|---|

@@ -10,7 +10,7 @@
 
 ## Krok 1 – Skopiuj folder projektu
 
-Skopiuj cały folder `Nowy folder` na docelowy komputer (pendrive, sieć lokalna, itp.).
+Skopiuj cały folder `Ollama z tego repo` na docelowy komputer (pendrive, sieć lokalna, itp.).
 
 ---
 
