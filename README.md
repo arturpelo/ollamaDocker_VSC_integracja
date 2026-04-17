@@ -41,7 +41,7 @@ dla komputera z kartą graficzną
 docker run -d --gpus all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 ```
 dla komputera bez karty VGA lub jeśli model ma działać na CPU. Uwaga! Jeśli powyższe polecenie
-wykonało się z błędemwm sprawdź i ewentualnie skasuj kontener (ale nie obraz).
+wykonało się z błędem to sprawdź i ewentualnie skasuj kontener (ale nie obraz).
 
 ```powershell
 docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
