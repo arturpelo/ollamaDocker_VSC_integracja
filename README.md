@@ -37,6 +37,12 @@ Otwórz terminal (PowerShell) i wykonaj:
 ```powershell
 docker run -d --gpus all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 ```
+lub (bez karty graficznej w komputerze) Uwaga! jeśli wykonałeś powyższe polecenie z błędem to skasuj kontener
+
+```powershell
+docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+```
+
 
 > Jeśli kontener już istnieje (był wcześniej zatrzymany):
 > ```powershell
