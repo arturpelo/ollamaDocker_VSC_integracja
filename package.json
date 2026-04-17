@@ -1,0 +1,70 @@
+{
+  "name": "ollama-vsc",
+  "displayName": "Ollama Local AI",
+  "description": "Integrate local Ollama (Docker) with VS Code – chat panel and terminal commands",
+  "version": "0.1.0",
+  "publisher": "local",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["AI", "Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ollama.openChat",
+        "title": "Ollama: Open Chat Panel"
+      },
+      {
+        "command": "ollama.askSelection",
+        "title": "Ollama: Ask about selection"
+      },
+      {
+        "command": "ollama.runInTerminal",
+        "title": "Ollama: Send prompt to Terminal"
+      },
+      {
+        "command": "ollama.changeModel",
+        "title": "Ollama: Change Model"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "ollama.askSelection",
+          "when": "editorHasSelection",
+          "group": "ollama"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Ollama Local AI",
+      "properties": {
+        "ollama.baseUrl": {
+          "type": "string",
+          "default": "http://localhost:11434",
+          "description": "Base URL of the Ollama API (Docker container exposes port 11434)"
+        },
+        "ollama.model": {
+          "type": "string",
+          "default": "llama3",
+          "description": "Default Ollama model to use"
+        },
+        "ollama.temperature": {
+          "type": "number",
+          "default": 0.7,
+          "description": "Sampling temperature (0-2)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.0"
+  }
+}
