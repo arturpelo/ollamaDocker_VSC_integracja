@@ -99,3 +99,6 @@ Przejdź do **File → Preferences → Settings** i wyszukaj `ollama`, aby skonf
 | `ollama.baseUrl` | `http://localhost:11434` | Adres API Ollamy |
 | `ollama.model` | `llama3` | Domyślny model |
 | `ollama.temperature` | `0.7` | Kreatywność odpowiedzi (0–1) |
+
+## Ograniczenie odpowiedzialności
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND... IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY...
