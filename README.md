@@ -13,6 +13,7 @@
 ## Krok 1 – Zainstaluj rozszerzenie z pliku .vsix
 
 **Opcja A – przez terminal (szybciej):**
+Pobierz cale repo jako zip i rozpakuj.
 
 ```powershell
 code --install-extension ollama-vsc-0.1.0.vsix
@@ -20,11 +21,12 @@ code --install-extension ollama-vsc-0.1.0.vsix
 
 **Opcja B – przez interfejs VS Code:**
 
-1. Otwórz VS Code.
-2. Naciśnij `Ctrl+Shift+X`, aby otworzyć panel **Extensions**.
-3. Kliknij ikonę `...` (trzy kropki) w prawym górnym rogu panelu.
-4. Wybierz **Install from VSIX…**
-5. Wskaż plik `.vsix` i potwierdź.
+1. Pobierz i rozpakuj całe repo.
+2. Otwórz VS Code.
+3. Naciśnij `Ctrl+Shift+X`, aby otworzyć panel **Extensions**.
+4. Kliknij ikonę `...` (trzy kropki) w prawym górnym rogu panelu.
+5. Wybierz **Install from VSIX…**
+6. Wskaż plik `.vsix` i potwierdź.
 
 Po instalacji kliknij **Reload Window** gdy VS Code o to poprosi.
 
@@ -34,6 +36,7 @@ Po instalacji kliknij **Reload Window** gdy VS Code o to poprosi.
 
 Otwórz terminal (PowerShell) i wykonaj:
 
+dla komputera z kartą graficzną
 ```powershell
 docker run -d --gpus all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 ```
@@ -44,6 +47,11 @@ docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 ```
 
 
+```powershell
+docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+```
+
+Uruchom kontener w dockerze lub z terminala za pomocą:
 > Jeśli kontener już istnieje (był wcześniej zatrzymany):
 > ```powershell
 > docker start ollama
@@ -95,3 +103,8 @@ Przejdź do **File → Preferences → Settings** i wyszukaj `ollama`, aby skonf
 | `ollama.baseUrl` | `http://localhost:11434` | Adres API Ollamy |
 | `ollama.model` | `llama3` | Domyślny model |
 | `ollama.temperature` | `0.7` | Kreatywność odpowiedzi (0–1) |
+
+## Ograniczenie odpowiedzialności
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND... IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY...
+
+OPROGRAMOWANIE JEST DOSTARCZANE „TAKIE, JAKIE JEST”, BEZ ŻADNEJ GWARANCJI... W ŻADNYM WYPADKU AUTOR ANI POSIADACZE PRAW AUTORSKICH NIE PONOSZĄ ODPOWIEDZIALNOŚCI ZA ŻADNE ROSZCZENIA, SZKODY ANI INNĄ ODPOWIEDZIALNOŚĆ...
