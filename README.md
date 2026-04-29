@@ -93,7 +93,11 @@ Naciśnij `Ctrl+Shift+P` w VSC i wyszukaj jedną z komend:
 | `Ollama: Change Model` | Wybiera model z listy dostępnych lokalnie |
 
 ---
-
+## Używanie ollama w terminalu CMD
+```powershell
+cmd
+docker exec -it ollama ollama run llama3
+```
 ## Ustawienia wtyczki
 
 Przejdź do **File → Preferences → Settings** i wyszukaj `ollama`, aby skonfigurować:
