@@ -64,6 +64,10 @@ Uruchom kontener w dockerze lub z terminala za pomocą:
 ```powershell
 docker exec -it ollama ollama pull llama3
 ```
+lub noże lepszy
+```powershell
+docker exec -it ollama ollama run qwen2.5-coder:7b
+```
 
 Możesz zastąpić `llama3` innym modelem, np. `mistral`, `phi3`, `gemma`.
 
