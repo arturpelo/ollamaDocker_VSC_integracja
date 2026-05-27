@@ -64,7 +64,7 @@ Uruchom kontener w dockerze lub z terminala za pomocą:
 ```powershell
 docker exec -it ollama ollama pull llama3
 ```
-lub noże lepszy
+lub może lepszy
 ```powershell
 docker exec -it ollama ollama run qwen2.5-coder:7b
 ```
